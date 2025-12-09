@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="" />
+    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="going over random numbers and in progress of building the walls to keep the Astronauts in the frame." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +55,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BasicGameApp.executor": "Run",
+    "git-widget-placeholder": "main",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -85,6 +86,15 @@
       <option name="presentableId" value="Default" />
       <updated>1539128102958</updated>
     </task>
+    <task id="LOCAL-00001" summary="going over random numbers and in progress of building the walls to keep the Astronauts in the frame.">
+      <option name="closed" value="true" />
+      <created>1764878226660</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764878226660</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -117,5 +127,9 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="going over random numbers and in progress of building the walls to keep the Astronauts in the frame." />
+    <option name="LAST_COMMIT_MESSAGE" value="going over random numbers and in progress of building the walls to keep the Astronauts in the frame." />
   </component>
 </project>
