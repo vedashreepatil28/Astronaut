@@ -87,7 +87,7 @@ public class BasicGameApp implements Runnable {
         astro2 = new Astronaut(randx,randy);
 
         astroid1 = new Astroid(100,200);
-        astroid22 = new Astroid(50,100);
+        astroid22 = new Astroid(800,100);
 
 
 
