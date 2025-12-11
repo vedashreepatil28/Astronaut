@@ -120,8 +120,18 @@ public class BasicGameApp implements Runnable {
         astro2.move();
         astroid1.move();
         astroid22.move();
+        crashing();
 
 	}
+
+    public void crashing(){
+        //check to see if my astro's crash into each other
+        if(astro.hitbox.intersects(astro2.hitbox)){
+            System.out.println("CRASH!!");
+            astro.dy = -astro.dy;
+            astro2.dy = -astro2.dy;
+        }
+    }
 	
    //Pauses or sleeps the computer for the amount specified in milliseconds
    public void pause(int time ){
@@ -175,6 +185,9 @@ public class BasicGameApp implements Runnable {
         g.drawImage(astroid, astroid1.xpos, astroid1.ypos, astroid1.width, astroid1.height, null);
         g.drawImage(astroid2, astroid22.xpos, astroid22.ypos, astroid22.width, astroid22.height, null);
 
+        g.drawRect(astro.hitbox.x, astro.hitbox.y, astro.hitbox.width, astro.hitbox.height);
+        g.drawRect(astro2.hitbox.x, astro2.hitbox.y, astro2.hitbox.width, astro2.hitbox.height);
+        /*gives a visual of how the hitbox looks */
         g.setColor(Color.GREEN);
         g.fillRect(100,300,200,200);
 
