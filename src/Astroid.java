@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Astroid {
     //VARIABLE DECLARATION SECTION
     //Here's where you state which variables you are going to use.
@@ -9,7 +11,7 @@ public class Astroid {
     public int width;
     public int height;
     public boolean isAlive;            //a boolean to denote if the hero is alive or dead.
-
+    public Rectangle hitbox2;
 
     // METHOD DEFINITION SECTION
 
@@ -22,24 +24,29 @@ public class Astroid {
     public Astroid(int pXpos, int pYpos) {
         xpos = pXpos;
         ypos = pYpos;
-        dx =0;
+        dx =10;
         dy =5;
         width = 85;
         height = 85;
         isAlive = false;
-
+        hitbox2 = new Rectangle(xpos, ypos, width, height);
     } // constructor
 
     //The move method.  Everytime this is run (or "called") the hero's x position and y position change by dx and dy
    //todo: homework make another astroid
     public void move() {
-        if(xpos>1000){xpos=0-width;} //wrap when hits right wall
-        if(xpos<0-width){xpos=1000;} //wrap when hits left wall
-        if(ypos>700){ypos=0-height;} //wrap when hits bottom wall
-        if(ypos<0-height){ypos=700;} //wrap when hits top wall
+        //if(xpos>1000){xpos=0-width;} //wrap when hits right wall
+       // if(xpos<0-width){xpos=1000;} //wrap when hits left wall
+       // if(ypos>700){ypos=0-height;} //wrap when hits bottom wall
+       // if(ypos<0-height){ypos=700;} //wrap when hits top wall
+        if (xpos>1000){dx=-dx;}
+        if (ypos>700){dy=-dy;}
+        if (xpos<0){dx=-dx;}
+        if (ypos<0){dy=-dy;}
         xpos = xpos + dx;
         ypos = ypos + dy;
 
+        hitbox2 = new Rectangle(xpos, ypos, width, height);
 
     }
 

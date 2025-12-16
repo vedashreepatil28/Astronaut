@@ -131,6 +131,11 @@ public class BasicGameApp implements Runnable {
             astro.dy = -astro.dy;
             astro2.dy = -astro2.dy;
         }
+        if(astroid1.hitbox2.intersects(astroid22.hitbox2)){
+            System.out.println("HIT!!");
+            astroid1.dy = -astroid1.dy;
+            astroid22.dy = -astroid22.dy;
+        }
     }
 	
    //Pauses or sleeps the computer for the amount specified in milliseconds
@@ -188,6 +193,8 @@ public class BasicGameApp implements Runnable {
         g.drawRect(astro.hitbox.x, astro.hitbox.y, astro.hitbox.width, astro.hitbox.height);
         g.drawRect(astro2.hitbox.x, astro2.hitbox.y, astro2.hitbox.width, astro2.hitbox.height);
         /*gives a visual of how the hitbox looks */
+        g.drawRect(astroid1.hitbox2.x, astroid1.hitbox2.y, astroid1.hitbox2.width, astroid1.hitbox2.height);
+        g.drawRect(astroid22.hitbox2.x, astroid22.hitbox2.y, astroid22.hitbox2.width, astroid22.hitbox2.height);
         g.setColor(Color.GREEN);
         g.fillRect(100,300,200,200);
 
