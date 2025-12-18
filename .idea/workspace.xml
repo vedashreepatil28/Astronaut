@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="Made the astroids bounce off of each other and also the walls.">
-      <change afterPath="$PROJECT_DIR$/Starry Background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2.0 Objects/Astroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2.0 Objects/Astroid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2.0 Objects/BasicGameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2.0 Objects/BasicGameApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Astroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Astroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicGameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicGameApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="astronaut disapears when they bump into each other" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765844020072</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="astronaut disapears when they bump into each other">
+      <option name="closed" value="true" />
+      <created>1765976284510</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1765976284510</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -224,6 +225,8 @@
     <MESSAGE value="homework for 11/12/25. made second astroid wrap around the screen." />
     <MESSAGE value="Made the astronauts bounce off of each other." />
     <MESSAGE value="Made the astroids bounce off of each other and also the walls." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made the astroids bounce off of each other and also the walls." />
+    <MESSAGE value="astronaut disapears when they bump into eachother" />
+    <MESSAGE value="astronaut disapears when they bump into each other" />
+    <option name="LAST_COMMIT_MESSAGE" value="astronaut disapears when they bump into each other" />
   </component>
 </project>

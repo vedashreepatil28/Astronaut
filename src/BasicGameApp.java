@@ -136,11 +136,12 @@ public class BasicGameApp implements Runnable {
             astro2.isAlive = false;
         }
 
-        if(astroid1.hitbox2.intersects(astroid22.hitbox2) && astroid1.isCrashing == false){
+        if(astroid1.hitbox2.intersects(astroid22.hitbox2) && astroid1.isAlive == true && astroid1.isCrashing == false){
             System.out.println("HIT!!");
             astroid1.height += 10;
             //same as writing astroid1.height = astroid1.height+10
             astroid1.isCrashing = true;
+            astroid1.isAlive = false;
         }
 
         if (!astroid1.hitbox2.intersects(astroid22.hitbox2)){
@@ -204,7 +205,9 @@ public class BasicGameApp implements Runnable {
         if(astro2.isAlive == true){
         g.drawImage(astroPic, astro2.xpos, astro2.ypos, astro2.width, astro2.height, null);
         }
-        g.drawImage(astroid, astroid1.xpos, astroid1.ypos, astroid1.width, astroid1.height, null);
+        if(astroid1.isAlive == true) {
+            g.drawImage(astroid, astroid1.xpos, astroid1.ypos, astroid1.width, astroid1.height, null);
+        }
         g.drawImage(astroid2, astroid22.xpos, astroid22.ypos, astroid22.width, astroid22.height, null);
 
 
