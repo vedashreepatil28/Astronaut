@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="astronaut disapears when they bump into each other" />
+    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="Made astroid 1 disappear after hitting astroid 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765976284510</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Made astroid 1 disappear after hitting astroid 2">
+      <option name="closed" value="true" />
+      <created>1766034495486</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1766034495486</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -227,6 +237,7 @@
     <MESSAGE value="Made the astroids bounce off of each other and also the walls." />
     <MESSAGE value="astronaut disapears when they bump into eachother" />
     <MESSAGE value="astronaut disapears when they bump into each other" />
-    <option name="LAST_COMMIT_MESSAGE" value="astronaut disapears when they bump into each other" />
+    <MESSAGE value="Made astroid 1 disappear after hitting astroid 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made astroid 1 disappear after hitting astroid 2" />
   </component>
 </project>
