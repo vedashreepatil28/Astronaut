@@ -13,6 +13,8 @@
 
 //Graphics Libraries
 import java.awt.Graphics2D;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.image.BufferStrategy;
 import java.awt.*;
 import javax.swing.JFrame;
@@ -21,8 +23,9 @@ import javax.swing.JPanel;
 
 //*******************************************************************************
 // Class Definition Section
+//step 1: add key listener
 
-public class BasicGameApp implements Runnable {
+public class BasicGameApp implements Runnable, KeyListener {
 
    //Variable Definition Section
    //Declare the variables used in the program 
@@ -90,7 +93,7 @@ public class BasicGameApp implements Runnable {
 
         astroid1 = new Astroid(100,150);
         astroid1.dx = -astroid1.dx;
-        astroid22 = new Astroid(110,100);
+        astroid22 = new Astroid(510,600);
 
 
 
@@ -145,7 +148,7 @@ public class BasicGameApp implements Runnable {
         }
 
         if (!astroid1.hitbox2.intersects(astroid22.hitbox2)){
-            System.out.println("no intersection");
+            //System.out.println("no intersection");
             astroid1.isCrashing = false;
         }
 
@@ -172,7 +175,10 @@ public class BasicGameApp implements Runnable {
    
       // creates a canvas which is a blank rectangular area of the screen onto which the application can draw
       // and trap input events (Mouse and Keyboard events)
-      canvas = new Canvas();  
+      canvas = new Canvas();
+      //step 2: set canvas as key listener
+      canvas.addKeyListener(this);
+
       canvas.setBounds(0, 0, WIDTH, HEIGHT);
       canvas.setIgnoreRepaint(true);
    
@@ -202,12 +208,12 @@ public class BasicGameApp implements Runnable {
 
         g.drawImage(backgroundPic, 0, 0, WIDTH, HEIGHT, null);
         g.drawImage(astroPic, astro.xpos, astro.ypos, astro.width, astro.height, null);
-        if(astro2.isAlive == true){
+     //   if(astro2.isAlive == true){
         g.drawImage(astroPic, astro2.xpos, astro2.ypos, astro2.width, astro2.height, null);
-        }
-        if(astroid1.isAlive == true) {
+      //  }
+      //  if(astroid1.isAlive == true) {
             g.drawImage(astroid, astroid1.xpos, astroid1.ypos, astroid1.width, astroid1.height, null);
-        }
+     //   }
         g.drawImage(astroid2, astroid22.xpos, astroid22.ypos, astroid22.width, astroid22.height, null);
 
 
@@ -223,4 +229,39 @@ public class BasicGameApp implements Runnable {
 
 		bufferStrategy.show();
 	}
+//step 3: add a listener method
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        System.out.println("key typed " + e.getKeyCode());
+        if (e.getKeyCode()==38){
+            System.out.println("pressed up arrow");
+           // astro.ypos = astro.ypos-20;
+            astro.dy= -Math.abs(astro.dy);
+        }
+        if (e.getKeyCode()==40){
+            System.out.println("pressed down arrow");
+            // astro.ypos = astro.ypos-20;
+            astro.dy= Math.abs(astro.dy);
+        }
+        if (e.getKeyCode()==39){
+            System.out.println("pressed right arrow");
+            // astro.ypos = astro.ypos-20;
+            astro.dx= Math.abs(astro.dx);
+        }
+        if (e.getKeyCode()==37){
+            System.out.println("pressed left arrow");
+            // astro.ypos = astro.ypos-20;
+            astro.dx= -Math.abs(astro.dx);
+        }
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+
+    }
 }
