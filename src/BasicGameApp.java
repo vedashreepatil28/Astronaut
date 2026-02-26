@@ -15,6 +15,8 @@
 import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.image.BufferStrategy;
 import java.awt.*;
 import javax.swing.JFrame;
@@ -24,8 +26,9 @@ import javax.swing.JPanel;
 //*******************************************************************************
 // Class Definition Section
 //step 1: add key listener
+//step 1: implament mouse listener
 
-public class BasicGameApp implements Runnable, KeyListener {
+public class BasicGameApp implements Runnable, KeyListener, MouseListener {
 
    //Variable Definition Section
    //Declare the variables used in the program 
@@ -177,7 +180,9 @@ public class BasicGameApp implements Runnable, KeyListener {
       // and trap input events (Mouse and Keyboard events)
       canvas = new Canvas();
       //step 2: set canvas as key listener
+      //step 2: set canvas as mouse listener
       canvas.addKeyListener(this);
+      canvas.addMouseListener(this);
 
       canvas.setBounds(0, 0, WIDTH, HEIGHT);
       canvas.setIgnoreRepaint(true);
@@ -241,27 +246,81 @@ public class BasicGameApp implements Runnable, KeyListener {
         if (e.getKeyCode()==38){
             System.out.println("pressed up arrow");
            // astro.ypos = astro.ypos-20;
-            astro.dy= -Math.abs(astro.dy);
+            astro.dy= -5;
         }
         if (e.getKeyCode()==40){
             System.out.println("pressed down arrow");
             // astro.ypos = astro.ypos-20;
-            astro.dy= Math.abs(astro.dy);
+            astro.dy= 5;
         }
         if (e.getKeyCode()==39){
             System.out.println("pressed right arrow");
             // astro.ypos = astro.ypos-20;
-            astro.dx= Math.abs(astro.dx);
+            astro.dx= 5;
         }
         if (e.getKeyCode()==37){
             System.out.println("pressed left arrow");
             // astro.ypos = astro.ypos-20;
-            astro.dx= -Math.abs(astro.dx);
+            astro.dx= -5;
         }
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
+        if (e.getKeyCode()==38){
+            System.out.println(" not pressed up arrow");
+            // astro.ypos = astro.ypos-20;
+            astro.dy= 0;
+        }
+        if (e.getKeyCode()==40){
+            System.out.println("pressed down arrow");
+            // astro.ypos = astro.ypos-20;
+            astro.dy= 0;
+        }
+        if (e.getKeyCode()==39){
+            System.out.println("pressed right arrow");
+            // astro.ypos = astro.ypos-20;
+            astro.dx= 0;
+        }
+        if (e.getKeyCode()==37){
+            System.out.println("pressed left arrow");
+            // astro.ypos = astro.ypos-20;
+            astro.dx= 0;
+        }
+
+    }
+    //step 3: add mouse listener method
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+        System.out.println(e.getPoint());
+        astroid22.xpos =e.getX();
+        astroid22.ypos = e.getY();
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+    astroid22.dx=-astroid22.dx;
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+        System.out.println("Entered!!!");
+        astroid1.dx = 5;
+        astroid1.dy = 5;
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+    astroid1.dx = 0;
+    astroid1.dy = 0;
+
 
     }
 }
