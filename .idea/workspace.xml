@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="all astronauts are bouncing off of all walls">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2.0 Objects/BasicGameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2.0 Objects/BasicGameApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicGameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicGameApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="all astronauts are bouncing off of all walls" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771530723529</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="all astronauts are bouncing off of all walls">
+      <option name="closed" value="true" />
+      <created>1772121540049</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1772121540049</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
