@@ -55,6 +55,7 @@ public class BasicGameApp implements Runnable, KeyListener, MouseListener {
     private Astronaut astro2;
     private Astroid astroid1;
     private Astroid astroid22;
+    public Astroid[] astroids;
 
 
 
@@ -98,6 +99,12 @@ public class BasicGameApp implements Runnable, KeyListener, MouseListener {
         astroid1.dx = -astroid1.dx;
         astroid22 = new Astroid(510,600);
 
+        astroids = new Astroid[5];
+
+        for (int c=0; c< astroids.length; c++){
+            astroids[c] = new Astroid((int)(Math.random()*1000), (int)(Math.random()*700));
+
+        }
 
 
 	}// BasicGameApp()
@@ -168,6 +175,7 @@ public class BasicGameApp implements Runnable, KeyListener, MouseListener {
 			}
    }
 
+
    //Graphics setup method
    private void setUpGraphics() {
       frame = new JFrame("Application Template");   //Create the program window or frame.  Names it.
@@ -229,6 +237,10 @@ public class BasicGameApp implements Runnable, KeyListener, MouseListener {
         g.drawRect(astroid22.hitbox2.x, astroid22.hitbox2.y, astroid22.hitbox2.width, astroid22.hitbox2.height);
         g.setColor(Color.GREEN);
         g.fillRect(100,300,200,200);
+
+        for( int z = 0; z< astroids.length; z++){
+            g.drawImage(astroid, astroids[z].xpos, astroids[z].ypos, astroids[z].width, astroids[z].height, null);
+        }
 
 		g.dispose();
 
