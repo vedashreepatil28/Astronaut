@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="we mad multiple astroids apear">
+    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="made all astroids move, but they are shaking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2.0 Objects/BasicGameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2.0 Objects/BasicGameApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2.0 Objects/Astroid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2.0 Objects/Astroid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2.0 Objects/BasicGameApp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Astroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Astroid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BasicGameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicGameApp.java" afterDir="false" />
     </list>
@@ -239,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773170431068</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="made all astroids move, but they are shaking">
+      <option name="closed" value="true" />
+      <created>1773275733633</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1773275733633</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -284,14 +293,15 @@
     <MESSAGE value="all astronauts are bouncing off of all walls" />
     <MESSAGE value="the astroids move when I move my mouse" />
     <MESSAGE value="we mad multiple astroids apear" />
-    <option name="LAST_COMMIT_MESSAGE" value="we mad multiple astroids apear" />
+    <MESSAGE value="made all astroids move, but they are shaking" />
+    <option name="LAST_COMMIT_MESSAGE" value="made all astroids move, but they are shaking" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BasicGameApp.java</url>
-          <line>188</line>
+          <line>192</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

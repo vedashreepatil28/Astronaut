@@ -169,6 +169,11 @@ public class BasicGameApp implements Runnable, KeyListener, MouseListener {
             astroid1.isCrashing = false;
         }
 
+        for (int x = 0; x<astroids.length; x++) {
+            if (astroids[x].hitbox2.intersects(astro.hitbox)) {
+                System.out.println("crashing!!!!");
+            }
+        }
 
     }
 	

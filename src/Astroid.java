@@ -26,7 +26,7 @@ public class Astroid {
         xpos = pXpos;
         ypos = pYpos;
         dx =8;
-        dy =0;
+        dy =3;
         width = 85;
         height = 85;
         isAlive = false;
@@ -48,8 +48,8 @@ public class Astroid {
         xpos = xpos + dx;
         ypos = ypos + dy;
 
-        dx = (int)(Math.random()*5);
-        dy = (int)(Math.random()*5);
+       // dx = (int)(Math.random()*5);
+        //dy = (int)(Math.random()*5);
 
 
         hitbox2 = new Rectangle(xpos, ypos, width, height);
