@@ -99,6 +99,7 @@ public class BasicGameApp implements Runnable, KeyListener, MouseListener {
         astroid1.dx = -astroid1.dx;
         astroid22 = new Astroid(510,600);
 
+
         astroids = new Astroid[5];
 
         for (int c=0; c< astroids.length; c++){
@@ -107,7 +108,7 @@ public class BasicGameApp implements Runnable, KeyListener, MouseListener {
         }
 
 
-	}// BasicGameApp()
+    }// BasicGameApp()
 
    
 //*******************************************************************************
@@ -136,9 +137,15 @@ public class BasicGameApp implements Runnable, KeyListener, MouseListener {
         astro2.move();
         astroid1.move();
         astroid22.move();
+
+        for (int s=0; s< astroids.length; s++) {
+            astroids[s].move();
+        }
         crashing();
 
 	}
+
+
 
     public void crashing(){
         //check to see if my astro's crash into each other

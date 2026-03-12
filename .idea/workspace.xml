@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="the astroids move when I move my mouse">
+    <list default="true" id="89a66352-7816-49ed-8169-4ce196490b58" name="Default Changelist" comment="we mad multiple astroids apear">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2.0 Objects/BasicGameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2.0 Objects/BasicGameApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Astroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Astroid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BasicGameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicGameApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772503792882</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="we mad multiple astroids apear">
+      <option name="closed" value="true" />
+      <created>1773170431068</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1773170431068</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -273,14 +283,15 @@
     <MESSAGE value="Made astroid 1 disappear after hitting astroid 2" />
     <MESSAGE value="all astronauts are bouncing off of all walls" />
     <MESSAGE value="the astroids move when I move my mouse" />
-    <option name="LAST_COMMIT_MESSAGE" value="the astroids move when I move my mouse" />
+    <MESSAGE value="we mad multiple astroids apear" />
+    <option name="LAST_COMMIT_MESSAGE" value="we mad multiple astroids apear" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BasicGameApp.java</url>
-          <line>180</line>
+          <line>188</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
